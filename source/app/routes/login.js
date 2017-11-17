@@ -4,4 +4,7 @@ module.exports = (app, passport) => {
         res.render('index');
     })
 
+    app.get('/login',(req,res)=>{
+        res.render('login')
+    })
 };

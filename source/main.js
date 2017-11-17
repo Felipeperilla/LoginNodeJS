@@ -37,6 +37,7 @@ app.use(flash());
 
 //routes
 require('./app/routes/login')(app, passport);
+require('./app/routes/register')(app, passport);
 
 //static files
 app.use(express.static(path.join(__dirname, 'public')));
